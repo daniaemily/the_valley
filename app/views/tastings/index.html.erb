@@ -1,0 +1,10 @@
+<h1>Tastings in the Valley</h1>
+
+<% @tastings.each do |tasting| %>
+  <p>
+    <%= tasting.winery.name %>
+    <%= tasting.name %>
+    <%= tasting.price_min %> - <%= tasting.price_max %>
+  </p>
+<% end %>
+
